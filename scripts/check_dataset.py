@@ -8,8 +8,8 @@ from typing import Optional
 import yaml
 from pytorch_trainer.iterators import MultiprocessIterator
 from tqdm import tqdm
-from yukarin_sosoa.config import Config
-from yukarin_sosoa.dataset import create_dataset
+from old_yukarin_sosoa.config import Config
+from old_yukarin_sosoa.dataset import create_dataset
 
 
 def _wrapper(index, dataset):
@@ -24,7 +24,7 @@ def _check(dataset, desc: str, num_processes: Optional[int], batchsize: int):
     wrapper = partial(_wrapper, dataset=dataset)
 
     with multiprocessing.Pool(processes=num_processes) as pool:
-        it = pool.imap_unordered(wrapper, range(len(dataset)), chunksize=2 ** 10)
+        it = pool.imap_unordered(wrapper, range(len(dataset)), chunksize=2**10)
         for i, error in tqdm(it, desc=desc, total=len(dataset)):
             if error is not None:
                 print(f"error at {i}")

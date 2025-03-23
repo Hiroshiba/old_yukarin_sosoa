@@ -2,7 +2,7 @@ from pathlib import Path
 
 import pytest
 import yaml
-from yukarin_sosoa.config import Config
+from old_yukarin_sosoa.config import Config
 from yaml import SafeLoader
 
 from tests.utility import get_data_directory

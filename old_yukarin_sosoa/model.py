@@ -5,8 +5,8 @@ import torch.nn.functional as F
 from pytorch_trainer import report
 from torch import Tensor, nn
 
-from yukarin_sosoa.config import ModelConfig
-from yukarin_sosoa.network.predictor import Predictor
+from old_yukarin_sosoa.config import ModelConfig
+from old_yukarin_sosoa.network.predictor import Predictor
 
 
 class Model(nn.Module):

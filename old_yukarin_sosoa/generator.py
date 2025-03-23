@@ -5,8 +5,8 @@ import numpy
 import torch
 from torch import Tensor
 
-from yukarin_sosoa.config import Config
-from yukarin_sosoa.network.predictor import Predictor, create_predictor
+from old_yukarin_sosoa.config import Config
+from old_yukarin_sosoa.network.predictor import Predictor, create_predictor
 
 
 def to_tensor(array: Union[Tensor, numpy.ndarray, Any]):

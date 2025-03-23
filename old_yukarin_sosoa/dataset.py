@@ -9,9 +9,9 @@ import numpy
 from torch.utils.data import ConcatDataset, Dataset
 from torch.utils.data._utils.collate import default_convert
 
-from yukarin_sosoa.config import DatasetConfig
-from yukarin_sosoa.data.phoneme import OjtPhoneme
-from yukarin_sosoa.data.sampling_data import SamplingData
+from old_yukarin_sosoa.config import DatasetConfig
+from old_yukarin_sosoa.data.phoneme import OjtPhoneme
+from old_yukarin_sosoa.data.sampling_data import SamplingData
 
 mora_phoneme_list = ["a", "i", "u", "e", "o", "A", "I", "U", "E", "O", "N", "cl", "pau"]
 voiced_phoneme_list = (

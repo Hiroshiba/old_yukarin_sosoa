@@ -2,8 +2,8 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Dict, Optional
 
-from yukarin_sosoa.utility import dataclass_utility
-from yukarin_sosoa.utility.git_utility import get_branch_name, get_commit_id
+from old_yukarin_sosoa.utility import dataclass_utility
+from old_yukarin_sosoa.utility.git_utility import get_branch_name, get_commit_id
 
 
 @dataclass

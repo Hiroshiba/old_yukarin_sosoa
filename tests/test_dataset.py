@@ -5,7 +5,7 @@ import numpy
 import pytest
 from acoustic_feature_extractor.data.phoneme import JvsPhoneme
 from acoustic_feature_extractor.data.sampling_data import SamplingData
-from yukarin_sosoa.dataset import (
+from old_yukarin_sosoa.dataset import (
     F0ProcessMode,
     FeatureDataset,
     f0_mean,

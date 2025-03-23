@@ -7,7 +7,7 @@ from espnet_pytorch_library.nets_utils import make_non_pad_mask
 from espnet_pytorch_library.tacotron2.decoder import Postnet
 from torch import Tensor, nn
 from torch.nn.utils.rnn import pad_sequence
-from yukarin_sosoa.config import NetworkConfig
+from old_yukarin_sosoa.config import NetworkConfig
 
 
 class Predictor(nn.Module):

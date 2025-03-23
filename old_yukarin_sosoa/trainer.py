@@ -9,23 +9,23 @@ from pytorch_trainer.training import Trainer, extensions
 from pytorch_trainer.training.updaters import StandardUpdater
 from tensorboardX import SummaryWriter
 
-from yukarin_sosoa.config import Config
-from yukarin_sosoa.dataset import create_dataset
-from yukarin_sosoa.evaluator import GenerateEvaluator
-from yukarin_sosoa.generator import Generator
-from yukarin_sosoa.model import Model
-from yukarin_sosoa.network.predictor import create_predictor
-from yukarin_sosoa.utility.pytorch_utility import (
+from old_yukarin_sosoa.config import Config
+from old_yukarin_sosoa.dataset import create_dataset
+from old_yukarin_sosoa.evaluator import GenerateEvaluator
+from old_yukarin_sosoa.generator import Generator
+from old_yukarin_sosoa.model import Model
+from old_yukarin_sosoa.network.predictor import create_predictor
+from old_yukarin_sosoa.utility.pytorch_utility import (
     AmpUpdater,
     init_weights,
     make_optimizer,
 )
-from yukarin_sosoa.utility.trainer_extension import (
+from old_yukarin_sosoa.utility.trainer_extension import (
     NoamShift,
     TensorboardReport,
     WandbReport,
 )
-from yukarin_sosoa.utility.trainer_utility import (
+from old_yukarin_sosoa.utility.trainer_utility import (
     LowValueTrigger,
     create_iterator,
     list_concat,
